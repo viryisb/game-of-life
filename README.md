@@ -29,5 +29,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### More information
 This is a partial demo of Conway's game of life.
 I used Immer https://github.com/immerjs/immer for the first time in my life after watching a tutorial. I hope the result is acceptable.
