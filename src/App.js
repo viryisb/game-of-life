@@ -15,7 +15,17 @@ const App = () => {
   });
 console.log(grid)
 return <div>
-  {grid.map(rows=>rows.map(col=><div/>))}
+ {/*  get the index for row and col */}
+  {grid.map((rows,i)=>
+  rows.map((col, k)=><div 
+  /* display a key */
+  key={`{${i}-${k}`}
+  
+  style={{width:20,
+     height:20, backgroundColour: grid[i][k]? 'pink':undefined, /* pink for alive and empty (undefined)for dead */
+     border:'solid 1px black'
+     }}/>)
+     )}
 </div>
 };
 export default App;
