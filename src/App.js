@@ -5,7 +5,7 @@ import "./App.css";
 
 const numRows = 30;
 const numCols = 50;
-/* I created an array of operations to compute the neighbours.*/
+/* I created an array of operations to compute the neighbors.*/
 const operations = [
   [0, 1],
   [0, -1],
@@ -51,11 +51,12 @@ const App = () => {
         for (let i = 0; i < numRows; i++) {
           for (let k = 0; k < numCols; k++) {
             let neighbors = 0;
-            /* For each operations, each gonna have an x and a y.
-             I'm going to compute a new I (newI) and that is going to be i+x and a new K (newK) that it's going to be k+y. Then, if newI is greater or equal to zero and newI
+            /* For each operations, each gonna have an X and a Y.
+             I'm going to compute a new I (newI) and that is going to be i+x and a new K (newK) 
+             that it's going to be k+y. Then, if newI is greater or equal to zero and newI
             is not greater or less than the number of rows and newK is greater than or equal
-            to zero and newK is less than the number of columns. f we have a live cell is equal to 1
-            and it is going to add 1 to the neighbors. That´s gonna tell us for a given cell haw many neighbors it has. 
+            to zero and newK is less than the number of columns. If we have a live cell is equal to 1
+            and it is going to add 1 to the neighbors. That´s gonna tell us for a given cell how many neighbors it has. 
             So I added a statement: if neighbors is less than 2 or neighbors is greater than 3 then our 
             current grid position dies, so we are going to say  gridCopy[i][k] is equal to 0
             There is one rule left: "Any dead cell with exactly three live neighbours becomes a live cell".
