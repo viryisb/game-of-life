@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 
-//Start with 50 then will see
+
 const numRows = 50;
 const numCols = 50;
 
@@ -14,6 +14,8 @@ const App = () => {
   return rows;
   });
 console.log(grid)
-return <div>hello</div>
+return <div>
+  {grid.map(rows=>rows.map(col=><div/>))}
+</div>
 };
 export default App;
